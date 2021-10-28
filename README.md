@@ -1,4 +1,4 @@
-# Обновляем\даунгрейд OpenWRT на шлюзах Aqara ZHWG11LM
+# Обновляем\даунгрейд OpenWRT на шлюзе Aqara ZHWG11LM
 
 -------
 __Владельцам шлюза Xiaomi DGNWG05LM [сюда](https://github.com/DivanX10/Openwrt-scripts-for-gateway-dgnwg05lm)__
