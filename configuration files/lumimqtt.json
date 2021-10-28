@@ -1,0 +1,12 @@
+{
+    "mqtt_host": "localhost",
+    "mqtt_port": 1883,
+    "mqtt_user": "",
+    "mqtt_password": "",
+    "topic_root": "lumi/{device_id}",
+    "auto_discovery": true,
+    "sensor_retain": false,
+    "sensor_threshold": 50,
+    "sensor_debounce_period": 60,
+    "light_transition_period": 1.0
+}
