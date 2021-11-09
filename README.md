@@ -72,6 +72,7 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
   libssh2-1 - SSH библиотека
   openssh-sftp-client - Позволяет осуществлять доступ по протоколу SFTP
   openssh-client-utils - В данном пакете содержатся пакеты openssh-client, openssh-keygen
+  luci-theme-bootstrap - LuCI themes, верхняя панель будет по центру, вместо уехавшей панели вправо
   htop - монитор процессов в консоли
 ```
 
