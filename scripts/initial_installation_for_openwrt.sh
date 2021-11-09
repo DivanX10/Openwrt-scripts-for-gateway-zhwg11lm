@@ -15,6 +15,7 @@ opkg install \
   libssh2-1 \
   openssh-sftp-client \
   openssh-client-utils \
+  luci-theme-bootstrap \
   htop
 
 echo "Packages are installed"
