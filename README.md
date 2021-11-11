@@ -79,3 +79,17 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
 ```
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/initial_installation_for_openwrt.sh -O - | sh
 ```
+
+
+__Внимание! Если наблюдаете проблемы с установкой пакетов и что-то не установилось, то можно записать установку в лог. Файлик с логами "basic_installation.log" будет находиться в папке /mnt. Запускаем две консоли, где в первой консоли запускаем команду для установки и ведения записи установки в файлик "basic_installation.log", а на второй консоли выводим информацию о процессе установки с файлика "basic_installation.log"__
+
+Запускаем на первой консоли
+```
+wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/initial_installation_for_openwrt.sh -O - | sh > /mnt/basic_installation.log 2>&1
+```
+
+Запускаем на второй консоли
+```
+tail -f /mnt/basic_installation.log 2>&1
+```
+
