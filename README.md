@@ -80,7 +80,7 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/initial_installation_for_openwrt.sh -O - | sh
 ```
 
-
+--------------
 __Внимание! Если наблюдаете проблемы с установкой пакетов и что-то не установилось, то можно записать установку в лог. Файлик с логами "basic_installation.log" будет находиться в папке /mnt.__ 
 
 ```
