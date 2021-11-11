@@ -4,7 +4,9 @@
 __Владельцам шлюза Xiaomi DGNWG05LM [сюда](https://github.com/DivanX10/Openwrt-scripts-for-gateway-dgnwg05lm)__
 
 --------
+__Ответы на вопросы в разделе [WiKi](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki)__
 
+--------
 Выражаю благодарность [Ivan Belokobylskiy](https://github.com/devbis) и [mr G1K](https://github.com/G1K) за помощь в обновлении и даунгрейде OpenWRT. 
 
 **Проект Open Lumi Gateway**
@@ -80,7 +82,6 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/initial_installation_for_openwrt.sh -O - | sh
 ```
 
------------
-# Ответы на вопросы можете найти в разделе [WiKi](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki)
+
 
 
