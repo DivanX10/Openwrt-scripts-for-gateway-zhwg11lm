@@ -20,12 +20,8 @@ opkg install \
 
 echo "Packages are installed"
 sleep 2
-echo "Installing pip packages"
-opkg update&&
-pip install httpx&&
-sleep 2
 echo "Adding configuration entries to zigbee2mqtt"
-sleep 5
+sleep 2
 sed -i 's/port: 8080/port: 8090/' /etc/zigbee2mqtt/configuration.yaml
 sed -i 's/homeassistant: false/homeassistant: true/' /etc/zigbee2mqtt/configuration.yaml
 echo "Configuration entries in zigbee2mqtt have been added"
