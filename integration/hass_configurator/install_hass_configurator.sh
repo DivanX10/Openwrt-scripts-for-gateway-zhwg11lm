@@ -1,10 +1,12 @@
 #!/bin/bash
 
-wget https://raw.githubusercontent.com/DivanX10/OpenWRT-and-Home-Assistant/main/requirements.txt -O /tmp/requirements.txt&&
-
-python /etc/tmp/install_package.py
-
+echo "Starting the hass-configurator integration installation"
+sleep 2
+wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/integration/hass_configurator/install_package.py -O /tmp/install_package.py&&
 sleep 5
+python /etc/tmp/install_package.py&&
+sleep 2
+
 if [ -e /etc/init.d/hass-configurator ]
 then
 echo "The file exists, skip it"
@@ -38,5 +40,6 @@ chmod +x /etc/init.d/hass-configurator&&
 /etc/init.d/hass-configurator enable&&
 /etc/init.d/hass-configurator start&&
 sleep 2
+
 echo "Done. Hass configurator is installed."
 
