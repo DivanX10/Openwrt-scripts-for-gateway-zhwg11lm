@@ -81,6 +81,7 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/initial_installation_for_openwrt.sh -O - | sh
 ```
 
+Если есть проблема с установкой пакетов, то читаем: [У меня не ставятся пакеты или установились не все пакеты](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki/У-меня-не-ставятся-пакеты-или-установились-не-все-пакеты) 
 
 
 
