@@ -75,6 +75,7 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
   openssh-client-utils - В данном пакете содержатся пакеты openssh-client, openssh-keygen
   luci-theme-bootstrap - LuCI themes, верхняя панель будет по центру, вместо уехавшей панели вправо
   htop - монитор процессов в консоли
+  python3-pymysql - это библиотека PyMySQL позволяющая подключиться в MySQL
 ```
 
 ```
