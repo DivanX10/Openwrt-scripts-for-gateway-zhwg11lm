@@ -36,7 +36,7 @@ echo "Done"
 sleep 2
 echo "Setting up MPD"
 mkdir -p /mpd/music /mpd/playlists /backup&&
-touch /mpd/database /mpd/log /etc/mpd.state&&
+touch /mpd/database /mpd/state&&
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/configuration%20files/mpd.conf -O /etc/mpd.conf&&
 echo "Done"
 sleep 2
