@@ -18,10 +18,6 @@ opkg install \
   luci-theme-bootstrap \
   htop
 
-sleep 2
-
-python3-pymysql
-
 echo "Packages are installed"
 sleep 2
 echo "Adding configuration entries to zigbee2mqtt"
