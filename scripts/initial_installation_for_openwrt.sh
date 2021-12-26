@@ -16,7 +16,8 @@ opkg install \
   openssh-sftp-client \
   openssh-client-utils \
   luci-theme-bootstrap \
-  htop
+  htop \
+  python3-pymysql
 
 echo "Packages are installed"
 sleep 2
