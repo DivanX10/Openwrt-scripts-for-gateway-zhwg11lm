@@ -1,7 +1,8 @@
 #!/bin/bash
+set -e
 echo "Starting the installation of the basic set"
 sleep 2
-opkg update&&
+opkg update
 opkg install \
   mc \
   nano \
@@ -28,13 +29,13 @@ sed -i 's/homeassistant: false/homeassistant: true/' /etc/zigbee2mqtt/configurat
 echo "Configuration entries in zigbee2mqtt have been added"
 sleep 2
 echo "Downloading the configuration file lumimqtt.json"
-wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/configuration%20files/lumimqtt.json -O /etc/lumimqtt.json&&
+wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/configuration%20files/lumimqtt.json -O /etc/lumimqtt.json
 echo "Done"
 sleep 2
 echo "Setting up MPD"
-mkdir -p /mpd/music /mpd/playlists /backup&&
-touch /mpd/database /mpd/state&&
-wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/configuration%20files/mpd.conf -O /etc/mpd.conf&&
+mkdir -p /mpd/music /mpd/playlists /backup
+touch /mpd/database /mpd/state
+wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/configuration%20files/mpd.conf -O /etc/mpd.conf
 echo "Done"
 sleep 2
 echo "The installation of the basic set is completed, after 10 seconds the gateway will reboot"
