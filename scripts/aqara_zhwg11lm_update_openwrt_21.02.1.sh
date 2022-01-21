@@ -27,9 +27,9 @@ echo "Done write uboot"
 sleep 2
 echo "Starting write new dtb"
 [ -f openwrt-imx6-imx6ull-aqara-zhwg11lm.dtb ] && flash_erase /dev/mtd2 0 0 && nandwrite -p /dev/mtd2 -p openwrt-imx6-imx6ull-aqara-zhwg11lm.dtb
-echo "Done write uboot"
+echo "Firmware update to OpenWRT version 21.02.1 has been completed"
 sleep 2
 echo "Starting run sysupgrade in console"
 [ -f openwrt-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin ] && sysupgrade -v -n openwrt-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin
-echo "Firmware update to OpenWRT version 21.02.1 has been completed"
+
 
