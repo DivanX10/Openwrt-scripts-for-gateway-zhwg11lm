@@ -42,7 +42,7 @@ https://t.me/xiaomi_gw_hack
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/aqara_zhwg11lm_update_openwrt_21.sh -O - | sh
 ```
 
-Обновляем OpenWRT с версии 19.07 до 21.02.01
+Обновляем OpenWRT с версии 19.07\21.02 до 21.02.01
 ```
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/aqara_zhwg11lm_update_openwrt_21.02.1.sh -O - | sh
 ```
