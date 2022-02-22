@@ -37,9 +37,9 @@ https://t.me/xiaomi_gw_hack
 ----
 **Шлюз Aqara ZHWG11LM**
 
-Обновляем OpenWRT с версии 19.07 до 21.02.1
+Обновляем OpenWRT с версии 19.07 до 21.02.2
 ```
-wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/aqara_zhwg11lm_update_openwrt_21.02.1.sh -O - | sh
+wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/scripts/aqara_zhwg11lm_update_openwrt_21.02.2.sh -O - | sh
 ```
 
 Даунгрейд OpenWRT с версии 21.02 до 19.07
