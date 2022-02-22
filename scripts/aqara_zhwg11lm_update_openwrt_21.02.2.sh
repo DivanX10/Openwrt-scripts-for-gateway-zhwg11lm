@@ -1,9 +1,9 @@
-#We are updating OpenWRT on the Aqara ZHWG11LM gateway from version 19.07 to 21.02.01
-#Script for updating OpenWRT from version 19.07 to 21.02.01 by @Divan
+#We are updating OpenWRT on the Aqara ZHWG11LM gateway from version 19.07 to 21.02.02
+#Script for updating OpenWRT from version 19.07 to 21.02.02 by @Divan
 #!/bin/sh
 set -e
 cd /tmp
-echo "Starting the procedure for updating OpenWRT from version 19.07 to 21.02.01"
+echo "Starting the procedure for updating OpenWRT from version 19.07 to 21.02.02"
 sleep 2
 wget https://openlumi.github.io/releases/21.02.2/targets/imx6/generic/u-boot-xiaomi_dgnwg05lm/u-boot.imx -O /tmp/u-boot.imx
 wget https://openlumi.github.io/releases/21.02.2/targets/imx6/generic/openlumi-21.02.2-imx6-imx6ull-aqara-zhwg11lm.dtb-O /tmp/openwrt-imx6-imx6ull-aqara-zhwg11lm.dtb
@@ -27,7 +27,7 @@ echo "Done write uboot"
 sleep 2
 echo "Starting write new dtb"
 [ -f openwrt-imx6-imx6ull-aqara-zhwg11lm.dtb ] && flash_erase /dev/mtd2 0 0 && nandwrite -p /dev/mtd2 -p openwrt-imx6-imx6ull-aqara-zhwg11lm.dtb
-echo "Firmware update to OpenWRT version 21.02.1 has been completed"
+echo "Firmware update to OpenWRT version 21.02.2 has been completed"
 sleep 2
 echo "Starting run sysupgrade in console"
 [ -f openwrt-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin ] && sysupgrade -v -n openwrt-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin
